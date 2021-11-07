@@ -65,7 +65,7 @@ body {
     letter-spacing: 35px;
 
     animation-name: moveInLeft;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-timing-function: ease-out;
 }
 
@@ -76,7 +76,7 @@ body {
     letter-spacing: 17.4px;
 
     animation-name: moveInRight;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
 @keyframes moveInLeft {
@@ -115,7 +115,7 @@ body {
     }
 }
 
-/* woah, display to inline-block for the box model in lieu of an inline element. Also, because it is inline-block, the element still behaves as text. The parent element can be given the property text-align:center */
+/* woah, display to inline-block for the box model in lieu of an inline element. Because the element is defined as an inline-block, the element will still behave as text. Therefore the parent element can be given the property text-align:center */
 .btn:link,
 .btn:visited {
     text-transform: uppercase;
@@ -165,6 +165,6 @@ body {
 }
 
 .btn-animated {
-    animation: moveInBottom 1.5s ease-out .5s;
+    animation: moveInBottom .75s ease-out .25s;
     animation-fill-mode: backwards;
 }
