@@ -8,6 +8,7 @@
     left: 0;
     opacity: 0;
     visibility: hidden;
+    transition: all .3s;
 
     &__content {
         width: 70%;
@@ -52,5 +53,29 @@
         -webkit-hyphens: auto;
         -ms-hyphens: auto;
         hyphens: auto;
+    }
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__close {
+
+        &:link,
+        :visited {
+            color: $color-grey-dark;
+            position: absolute;
+            top: 2.5rem;
+            right: 2.5rem;
+            font-size: 3rem;
+            text-decoration: none;
+            display: inline-block;
+            line-height: 1;
+        }
+
+        &:hover {
+            color: $color-primary;
+        }
     }
 }
