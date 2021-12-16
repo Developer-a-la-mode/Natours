@@ -12,3 +12,15 @@
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
+//Media Query
+@mixin response-phone {
+    @media(max-width:600px) {
+        html {
+            @content
+        }
+        
+    }
+
+
+}   
