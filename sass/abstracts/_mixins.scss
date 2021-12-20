@@ -14,13 +14,10 @@
 }
 
 //Media Query
-@mixin response-phone {
+@mixin respond-phone {
     @media(max-width:600px) {
         html {
             @content
-        }
-        
+        }     
     }
-
-
 }   
